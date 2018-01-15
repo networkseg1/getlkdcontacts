@@ -2,7 +2,7 @@
 Find contacts at a company:  Google Search engine, BS4 and selenium with Firefox.
 
 # Description
-Python script to scrape pub linkedin contact results from Google and get name, surname and position based of a Company name. The output is stored into a Database.
+Python script to scrape pub linkedin contact results from Google, getting the name, surname and position based of a Company name. The output is stored into a Database.
 
 # Requirements
 Tested on Debian 9 64bits and python 3.4+
