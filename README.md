@@ -23,7 +23,7 @@ Modify /opt/osint/getldkcontacts/lib/python/site-package/database_osint.py and s
 
 # Examples of use:
  
-    /opt/osint/getldkcontacts/bin/python  getlkdcontacts.py 'my company'
+    /opt/osint/getldkcontacts/bin/python getlkdcontacts.py 'my company'
 
     /opt/osint/getldkcontacts/bin/python getlkdcontacts.py 'my company' -n 10 -s 0 -i 10 -la en -p http://127.0.0.1:8080
 
