@@ -13,9 +13,13 @@ Tested on Debian 9 64bits and python 3.4+
 Default path: /opt/osint/getldkcontacts/
 
 # Database configuration
-Edit /opt/osint/getldkcontacts/lib/python/site-package/database_osint.py and set you own Database information.
 
 The default parameters will work but we suggest you to use another user/pass data.
+
+Modify user/password of osint DB: DBldcontacts.sql
+
+Modify /opt/osint/getldkcontacts/lib/python/site-package/database_osint.py and set your own Database information.
+
 
 # Examples of use:
  
