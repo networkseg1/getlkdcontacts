@@ -28,3 +28,7 @@ Modify /opt/osint/getldkcontacts/lib/python/site-package/database_osint.py and s
     /opt/osint/getldkcontacts/bin/python getlkdcontacts.py 'my company' -n 10 -s 0 -i 10 -la en -p http://127.0.0.1:8080
 
     /opt/osint/getldkcontacts/bin/python getlkdcontacts.py 'my company' -n 400 -s 0 -i 100
+
+# Contact
+
+If you feel like contacting me, you can find my contact information on my <a href="http://seguridadxredes.blogspot.com" title="Contact with author">blog</a>
