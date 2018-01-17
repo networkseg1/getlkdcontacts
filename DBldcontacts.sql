@@ -5,7 +5,7 @@ GRANT  SELECT, INSERT, UPDATE ON osint.* TO 'osintuser'@localhost;
 FLUSH PRIVILEGES;
 USE osint;
 
-DROP TABLE IF EXISTS 'ldcontacts;
+DROP TABLE IF EXISTS 'ldcontacts';
 CREATE TABLE 'ldcontacts' (
 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 'name' varchar(50) NOT NULL,  
