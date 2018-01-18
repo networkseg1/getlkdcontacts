@@ -17,7 +17,7 @@ def store_ld_contact(name, name2, surname, position, company):
     dab = db.db_conection()
     try:
         cursor = dab.cursor()
-        insert_query = "INSERT INTO `ldcontacts` (`name`,`name2`, `surname`, `position`, `company`) VALUES (%s, %s, %s, %s, %s)"
+        insert_query = "INSERT INTO ldcontacts (name, name2, surname, position, company) VALUES (%s, %s, %s, %s, %s)"
         cursor.execute(insert_query, (name, name2, surname, position, company))
         dab.commit()
         cursor.close()
