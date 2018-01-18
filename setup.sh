@@ -27,6 +27,7 @@ hardening_mysql_DB_system() {
 echo "****************************************************"
 echo "MySQL Secure Installation .........................."
 echo "****************************************************"
+/etc/init.d/mysql restart
 mysql_secure_installation
 echo "     "
 echo "setting up mysql directory permissions:"
