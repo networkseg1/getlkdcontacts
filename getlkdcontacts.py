@@ -8,6 +8,7 @@ import database_osint as db
 from pyvirtualdisplay import Display
 from urllib.parse import urlparse
 from selenium import webdriver
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from unidecode import unidecode
 from bs4 import BeautifulSoup
 
@@ -61,6 +62,7 @@ def scrap(w, pro, cp):
     soup = ''
     display = Display(visible=0, size=(800, 600))
     display.start()
+    firefox = FirefoxBinary('/usr/bin/firefox-esr')
     if pro:
         proxyparsed = urlparse(pro)
         miproxy = proxyparsed.hostname
@@ -75,9 +77,9 @@ def scrap(w, pro, cp):
          'sslProxy': miproxy,
          'sslProxyPort': port
          }
-        webdrv = webdriver.Firefox(capabilities=desired_capability)
+        webdrv = webdriver.Firefox(firefox_binary=firefox, capabilities=desired_capability)
     else:
-        webdrv = webdriver.Firefox()
+        webdrv = webdriver.Firefox(firefox_binary=firefox)
 
     webdrv.implicitly_wait(30)
     webdrv.get(w)
